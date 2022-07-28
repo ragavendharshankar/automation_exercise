@@ -1,0 +1,12 @@
+Test case,URL,Expected Result Field,Expected Result,payload
+Validate number of characters,https://swapi.dev/api/people,Count,82,{'Content-type' : 'application/json'}
+Validate character is available in API,https://swapi.dev/api/people,name,Luke Skywalker,{'Content-type' : 'application/json'}
+Validate character is available in API,https://swapi.dev/api/people,name,Qui-Gon Jinn,{'Content-type' : 'application/json'}
+Validate character is available in API,https://swapi.dev/api/people,name,Nute Gunray,{'Content-type' : 'application/json'}
+Validate character is available in API,https://swapi.dev/api/people,name,Adi Gallia,{'Content-type' : 'application/json'}
+Validate details of a specific character,https://swapi.dev/api/people/15,"name,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld","Greedo,173,74,n/a,green,black,44BBY,male,https://swapi.dev/api/planets/23/",{'Content-type' : 'application/json'}
+Validate details of a specific character,https://swapi.dev/api/people/20,"name,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld","Yoda,66,17,white,green,brown,896BBY,male,https://swapi.dev/api/planets/28/",{'Content-type' : 'application/json'}
+Validate response code,https://swapi.dev/api/people,response_code,200,{'Content-type' : 'application/json'}
+Validate response code,https://swapi.dev/api/people/swapi.dev,response_code,404,{'Content-type' : 'application/json'}
+Validate type of the field in the response,https://swapi.dev/api/planets/1,"name,rotation_period,orbital_period","str,str,str",{'Content-type' : 'application/json'}
+Validate type of the field in the response,https://swapi.dev/api/starships/9/,"name,model,hyperdrive_rating,pilots","str,str,str,list",{'Content-type' : 'application/json'}

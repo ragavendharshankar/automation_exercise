@@ -1,3 +1,3 @@
 # automation_exercise
 
-Run the programming skills python file.
+Run the "programming_skills.py" file.
